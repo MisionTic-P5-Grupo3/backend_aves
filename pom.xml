@@ -8,11 +8,11 @@
 		<version>2.5.7</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>misionticP5G3.example</groupId>
-	<artifactId>backendAves</artifactId>
+	<groupId>com.misiontic</groupId>
+	<artifactId>aves-ms</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>backendAves</name>
-	<description>Proyecto para el control de aves en una reseva forestal </description>
+	<name>aves-ms</name>
+	<description>Microservice aves </description>
 	<properties>
 		<java.version>17</java.version>
 	</properties>

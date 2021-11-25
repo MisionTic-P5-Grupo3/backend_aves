@@ -2,7 +2,7 @@ package misionticP5G3.backendAves.models;
 
 import org.springframework.data.annotation.Id;
 
-public class aves {
+public class Ave {
     @Id
     private Integer idAve;
     private String nombreAve;
@@ -11,7 +11,7 @@ public class aves {
     private String colorCuerpo;
     private Integer tamaño;
     
-    public aves(Integer idAve, String nombreAve, String nombreCientificoAve, String tipoAve, String colorCuerpo, Integer tamaño){
+    public Ave(Integer idAve, String nombreAve, String nombreCientificoAve, String tipoAve, String colorCuerpo, Integer tamaño){
         this.idAve=idAve;
         this.nombreAve=nombreAve;
         this.nombreCientificoAve=nombreCientificoAve;

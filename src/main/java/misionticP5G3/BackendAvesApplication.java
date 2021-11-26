@@ -1,4 +1,4 @@
-package misionticP5G3.backendAves;
+package misionticP5G3;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

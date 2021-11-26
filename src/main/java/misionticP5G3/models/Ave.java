@@ -1,37 +1,19 @@
-package misionticP5G3.backendAves.models;
+package misionticP5G3.models;
 
 import org.springframework.data.annotation.Id;
 
 public class Ave {
     @Id
-    private Integer idAve;
-    private String nombreAve;
     private String nombreCientificoAve;
+    private String nombreAve;
     private String tipoAve;
-    private String colorCuerpo;
     private Integer tamaño;
-    
-    public Ave(Integer idAve, String nombreAve, String nombreCientificoAve, String tipoAve, String colorCuerpo, Integer tamaño){
-        this.idAve=idAve;
-        this.nombreAve=nombreAve;
-        this.nombreCientificoAve=nombreCientificoAve;
-        this.tipoAve=tipoAve;
-        this.colorCuerpo=colorCuerpo;
-        this.tamaño=tamaño;
-    }
 
-    /**
-     * @return the idAve
-     */
-    public Integer getIdAve() {
-        return idAve;
-    }
-
-    /**
-     * @param idAve the idAve to set
-     */
-    public void setIdAve(Integer idAve) {
-        this.idAve = idAve;
+    public Ave(String nombreCientificoAve, String nombreAve, String tipoAve, Integer tamaño) {
+        this.nombreCientificoAve = nombreCientificoAve;
+        this.nombreAve = nombreAve;
+        this.tipoAve = tipoAve;
+        this.tamaño = tamaño;
     }
 
     /**
@@ -77,20 +59,6 @@ public class Ave {
     }
 
     /**
-     * @return the colorCuerpo
-     */
-    public String getColorCuerpo() {
-        return colorCuerpo;
-    }
-
-    /**
-     * @param colorCuerpo the colorCuerpo to set
-     */
-    public void setColorCuerpo(String colorCuerpo) {
-        this.colorCuerpo = colorCuerpo;
-    }
-
-    /**
      * @return the tamaño
      */
     public Integer getTamaño() {
@@ -103,7 +71,5 @@ public class Ave {
     public void setTamaño(Integer tamaño) {
         this.tamaño = tamaño;
     }
-    
-    
-    
+
 }

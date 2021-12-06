@@ -7,13 +7,13 @@ public class Ave {
     private String nombreCientificoAve;
     private String nombreAve;
     private String tipoAve;
-    private Integer tamaño;
+    private Integer tamano;
 
-    public Ave(String nombreCientificoAve, String nombreAve, String tipoAve, Integer tamaño) {
+    public Ave(String nombreCientificoAve, String nombreAve, String tipoAve, Integer tamano) {
         this.nombreCientificoAve = nombreCientificoAve;
         this.nombreAve = nombreAve;
         this.tipoAve = tipoAve;
-        this.tamaño = tamaño;
+        this.tamano = tamano;
     }
 
     /**
@@ -59,17 +59,17 @@ public class Ave {
     }
 
     /**
-     * @return the tamaño
+     * @return the tamano
      */
-    public Integer getTamaño() {
-        return tamaño;
+    public Integer getTamano() {
+        return tamano;
     }
 
     /**
-     * @param tamaño the tamaño to set
+     * @param tamano the tamano to set
      */
-    public void setTamaño(Integer tamaño) {
-        this.tamaño = tamaño;
+    public void setTamano(Integer tamano) {
+        this.tamano = tamano;
     }
 
 }

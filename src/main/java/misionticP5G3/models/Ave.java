@@ -4,17 +4,24 @@ import org.springframework.data.annotation.Id;
 
 public class Ave {
     @Id
-    private String nombreCientificoAve;
-    private String nombreAve;
-    private String tipoAve;
-    private Integer tamano;
+    private String  nombreCientificoAve;
+    private String  nombreAve;
+    private String  tipoAve;
+    private Integer tamaño;
+    private String  descripcion;
+    private String  url;
 
-    public Ave(String nombreCientificoAve, String nombreAve, String tipoAve, Integer tamano) {
+
+
+    public Ave(String nombreCientificoAve, String nombreAve, String tipoAve, Integer tamaño, String  descripcion, String  url) {
         this.nombreCientificoAve = nombreCientificoAve;
         this.nombreAve = nombreAve;
         this.tipoAve = tipoAve;
-        this.tamano = tamano;
+        this.tamaño = tamaño;
+        this.descripcion = descripcion;
+        this.url = url;
     }
+
 
     /**
      * @return the nombreAve
@@ -59,17 +66,44 @@ public class Ave {
     }
 
     /**
-     * @return the tamano
+     * @return the tamaño
      */
-    public Integer getTamano() {
-        return tamano;
+    public Integer getTamaño() {
+        return tamaño;
     }
 
     /**
-     * @param tamano the tamano to set
+     * @param tamaño the tamaño to set
      */
-    public void setTamano(Integer tamano) {
-        this.tamano = tamano;
+    public void setTamaño(Integer tamaño) {
+        this.tamaño = tamaño;
     }
 
+    /**
+     * @return the descripcion
+     */
+    public String getDescripcion() {
+        return descripcion;
+    }
+
+    /**
+     * @param descripcion the descripcion to set
+     */
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
+    }
+
+    /**
+     * @return the url
+     */
+    public String getUrl() {
+        return url;
+    }
+
+    /**
+     * @param url the url to set
+     */
+    public void setUrl(String url) {
+        this.url = url;
+    }
 }

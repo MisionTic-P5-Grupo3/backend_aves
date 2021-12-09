@@ -3,6 +3,7 @@ package misionticP5G3.controllers;
 import java.util.List;
 import misionticP5G3.repositories.AvesRepository;
 import misionticP5G3.models.Ave;
+import misionticP5G3.exceptions.AveAlreadyExistsException;
 import misionticP5G3.exceptions.AveNotFoundException;
 import org.springframework.web.bind.annotation.*;
 
@@ -60,6 +61,9 @@ public class AvesController {
     // Controlador para crear ave
     @PostMapping("/createAve")
     Ave newAccount(@RequestBody Ave ave) {
+        if (avesRepository.existsById(ave.getNombreCientificoAve()) == true) {
+            throw new AveAlreadyExistsException("Ya existe un ave con este nombre");
+        }
         return avesRepository.save(ave);
     }
 

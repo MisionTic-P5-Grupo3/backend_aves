@@ -1,6 +1,8 @@
+misionticP5G3\exceptions\AveAlreadyExistsAdvice.class
 misionticP5G3\exceptions\AveNotFoundException.class
 misionticP5G3\BackendAvesApplication.class
 misionticP5G3\models\Ave.class
 misionticP5G3\exceptions\AveNotFoundAdvice.class
 misionticP5G3\repositories\AvesRepository.class
+misionticP5G3\exceptions\AveAlreadyExistsException.class
 misionticP5G3\controllers\AvesController.class

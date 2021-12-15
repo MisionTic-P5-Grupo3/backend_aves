@@ -4,24 +4,33 @@ import org.springframework.data.annotation.Id;
 
 public class Ave {
     @Id
+    private String id;
     private String  nombreCientificoAve;
     private String  nombreAve;
     private String  tipoAve;
-    private Integer tamaño;
+    private Integer tamano;
     private String  descripcion;
     private String  url;
 
 
 
-    public Ave(String nombreCientificoAve, String nombreAve, String tipoAve, Integer tamaño, String  descripcion, String  url) {
+    public Ave(String id, String nombreCientificoAve, String nombreAve, String tipoAve, Integer tamano, String  descripcion, String  url) {
+        this.id = id;
         this.nombreCientificoAve = nombreCientificoAve;
         this.nombreAve = nombreAve;
         this.tipoAve = tipoAve;
-        this.tamaño = tamaño;
+        this.tamano = tamano;
         this.descripcion = descripcion;
         this.url = url;
     }
 
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
 
     /**
      * @return the nombreAve
@@ -66,17 +75,17 @@ public class Ave {
     }
 
     /**
-     * @return the tamaño
+     * @return the tamano
      */
-    public Integer getTamaño() {
-        return tamaño;
+    public Integer getTamano() {
+        return tamano;
     }
 
     /**
-     * @param tamaño the tamaño to set
+     * @param tamano the tamano to set
      */
-    public void setTamaño(Integer tamaño) {
-        this.tamaño = tamaño;
+    public void setTamano(Integer tamano) {
+        this.tamano = tamano;
     }
 
     /**
